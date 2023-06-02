@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application>
+
+        <activity
+            android:name="com.buzbuz.smartautoclicker.feature.billing.ui.ProModeBillingActivity"
+            android:theme="@style/AppTheme.TranslucentActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:excludeFromRecents="true"/>
+
+    </application>
+</manifest>

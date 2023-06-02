@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<resources>
+    <integer name="default_detection_quality">600</integer>
+
+    <string name="default_event_name">Default event</string>
+
+    <string name="default_click_name">Click</string>
+    <integer name="default_click_press_duration">1</integer>
+
+    <string name="default_swipe_name">Swipe</string>
+    <integer name="default_swipe_duration">500</integer>
+
+    <string name="default_pause_name">Wait</string>
+    <integer name="default_pause_duration">50</integer>
+
+    <string name="default_intent_name">Intent</string>
+    <bool name="default_intent_isAdvanced">false</bool>
+
+    <string name="default_toggle_event_name">Toggle event</string>
+
+    <string name="default_condition_name">Condition</string>
+    <integer name="default_condition_threshold">4</integer>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<resources>
+
+    <style name="ScenarioConfigTheme" parent="AppTheme">
+        <item name="clickSelectorStyle">@style/AppTheme.ScenarioConfig.Selector.Click</item>
+        <item name="conditionSelectorStyle">@style/AppTheme.ScenarioConfig.Selector.Condition</item>
+    </style>
+
+</resources>

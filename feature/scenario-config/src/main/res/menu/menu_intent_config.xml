@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_simple"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_item_title_simple"/>
+    <item
+        android:id="@+id/page_advanced"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_advanced"
+        android:title="@string/menu_item_title_advanced"/>
+</menu>
