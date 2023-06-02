@@ -1,19 +1,4 @@
-/*
- * Copyright (C) 2023 Kevin Buzeau
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+ 
 package com.buzbuz.smartautoclicker.activity
 
 import android.content.DialogInterface
@@ -133,19 +118,8 @@ class ScenarioListFragment : Fragment(), PermissionsDialogFragment.PermissionDia
         val uiState = scenarioViewModel.uiState.value ?: return false
 
         when (item.itemId) {
-            R.id.action_export -> when {
-                !uiState.isProModePurchased -> scenarioViewModel.onExportClickedWithoutProMode(requireContext())
-                uiState.type == ScenarioListFragmentUiState.Type.EXPORT -> showBackupDialog(
-                    isImport = false,
-                    scenariosToBackup = scenarioViewModel.getScenariosSelectedForBackup(),
-                )
-                else -> scenarioViewModel.setUiState(ScenarioListFragmentUiState.Type.EXPORT)
-            }
 
-            R.id.action_import -> when {
-                !uiState.isProModePurchased -> scenarioViewModel.onImportClickedWithoutProMode(requireContext())
-                else -> showBackupDialog(true)
-            }
+        
 
             R.id.action_cancel -> scenarioViewModel.setUiState(ScenarioListFragmentUiState.Type.SELECTION)
             R.id.action_search -> scenarioViewModel.setUiState(ScenarioListFragmentUiState.Type.SEARCH)
@@ -172,8 +146,8 @@ class ScenarioListFragment : Fragment(), PermissionsDialogFragment.PermissionDia
         viewBinding.topAppBar.menu.apply {
             findItem(R.id.action_select_all)?.bind(menuState.selectAllItemState)
             findItem(R.id.action_cancel)?.bind(menuState.cancelItemState)
-            findItem(R.id.action_import)?.bind(menuState.importItemState)
-            findItem(R.id.action_export)?.bind(menuState.exportItemState)
+           
+        
             findItem(R.id.action_search)?.apply {
                 bind(menuState.searchItemState)
                 actionView?.let { actionView ->

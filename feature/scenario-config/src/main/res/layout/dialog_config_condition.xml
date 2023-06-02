@@ -75,12 +75,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/margin_vertical_default"/>
 
-                    <include layout="@layout/include_input_field_dropdown"
-                        android:id="@+id/condition_should_appear"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_vertical_default"/>
-
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -89,33 +83,7 @@
                 style="@style/AppTheme.Widget.Card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/margin_horizontal_default">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/margin_horizontal_default"
-                    android:layout_marginVertical="@dimen/margin_vertical_large"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.textview.MaterialTextView
-                        style="@style/AppTheme.TextAppearance.CardTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/section_title_condition_threshold"/>
-
-                    <com.google.android.material.slider.Slider
-                        android:id="@+id/seekbar_diff_threshold"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/item_height"
-                        android:layout_marginStart="@dimen/margin_horizontal_small"
-                        android:layout_marginEnd="@dimen/margin_horizontal_small"
-                        android:stepSize="1.0"
-                        app:labelBehavior="floating"/>
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
+                android:layout_marginHorizontal="@dimen/margin_horizontal_default"/>
 
         </LinearLayout>
 

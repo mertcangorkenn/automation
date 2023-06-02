@@ -44,23 +44,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/layout_actions"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/icon_enabled"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_confirm"
-            android:contentDescription="@string/content_desc_event_state"/>
-
-        <TextView
-            android:id="@+id/text_enabled"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            tools:text="Enabled"/>
-
-    </LinearLayout>
+        android:orientation="horizontal"/>
 
     <LinearLayout
         android:id="@+id/layout_actions"

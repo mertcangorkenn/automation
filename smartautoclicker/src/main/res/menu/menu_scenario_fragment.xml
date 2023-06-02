@@ -18,18 +18,6 @@
         android:visible="false"/>
 
     <item
-        android:id="@+id/action_import"
-        android:icon="@drawable/ic_load"
-        app:showAsAction="ifRoom|collapseActionView"
-        android:title="@string/menu_item_title_import" />
-
-    <item
-        android:id="@+id/action_export"
-        android:icon="@drawable/ic_save"
-        app:showAsAction="ifRoom|collapseActionView"
-        android:title="@string/menu_item_title_export" />
-
-    <item
         android:id="@+id/action_search"
         android:icon="@drawable/abc_ic_search_api_material"
         app:showAsAction="always|collapseActionView"

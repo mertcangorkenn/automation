@@ -1,256 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
- 
+
 <resources>
 
-    <!--
-      - Titles for the dialogs displayed as overlay.
-      - Allowed characters can be small due to save/delete/close buttons.
-      -->
-    <string name="dialog_overlay_title_action_type">Action type</string>
-    <string name="dialog_overlay_title_application_selection">Select an application</string>
-    <string name="dialog_overlay_title_click">Click</string>
-    <string name="dialog_overlay_title_condition_config">Condition</string>
-    <string name="dialog_overlay_title_copy_from">Copy from</string>
-    <string name="dialog_overlay_title_end_condition_config">End Condition</string>
-    <string name="dialog_overlay_title_event_config">Event</string>
-    <string name="dialog_overlay_title_event_selection">Select an event</string>
-    <string name="dialog_overlay_title_intent">Intent</string>
-    <string name="dialog_overlay_title_pause">Wait</string>
-    <string name="dialog_overlay_title_scenario_config">Scenario</string>
-    <string name="dialog_overlay_title_swipe">Swipe</string>
-    <string name="dialog_overlay_title_toggle_event">Event state</string>
+    <string name="dialog_overlay_title_action_type">Eylem Türü</string>
+    <string name="dialog_overlay_title_application_selection">Bir uygulama seçin</string>
+    <string name="dialog_overlay_title_click">Tıkla</string>
+    <string name="dialog_overlay_title_condition_config">Alanlar</string>
+    <string name="dialog_overlay_title_copy_from">Buradan kopyala</string>
+    <string name="dialog_overlay_title_end_condition_config">Son Koşul</string>
+    <string name="dialog_overlay_title_event_config">Otomasyon</string>
+    <string name="dialog_overlay_title_event_selection">Bir otomasyon seçin</string>
+    <string name="dialog_overlay_title_intent">Uygulama Başlatma</string>
+    <string name="dialog_overlay_title_pause">Bekle</string>
+    <string name="dialog_overlay_title_scenario_config">Otomasyon</string>
+    <string name="dialog_overlay_title_swipe">Kaydır</string>
+    <string name="dialog_overlay_title_toggle_event">Otomasyon Durumu</string>
 
-    <!--
-      - Text for menu items.
-      - Should be short and concise.
-      -->
-    <string name="menu_item_title_advanced">Advanced</string>
-    <string name="menu_item_title_cancel">Cancel</string>
-    <string name="menu_item_title_search">Search</string>
-    <string name="menu_item_title_simple">Simple</string>
-    <string name="menu_item_title_events">Events</string>
-    <string name="menu_item_title_config">Config</string>
-    <string name="menu_item_title_debug">Debug</string>
-    <string name="menu_item_title_conditions">Conditions</string>
-    <string name="menu_item_title_actions">Actions</string>
+    <string name="menu_item_title_advanced">Gelişmiş</string>
+    <string name="menu_item_title_cancel">İptal</string>
+    <string name="menu_item_title_search">Ara</string>
+    <string name="menu_item_title_simple">Basit</string>
+    <string name="menu_item_title_events">Otomasyonlar</string>
+    <string name="menu_item_title_config">Yapılandırma</string>
+    <string name="menu_item_title_debug">Hata Ayıklama</string>
+    <string name="menu_item_title_conditions">Alanlar</string>
+    <string name="menu_item_title_actions">Eylemler</string>
 
-    <!--
-      - Text for items in a list or vertical layout.
-      -  * Title should be short and concise.
-      -  * Desc can have more space to describe the title
-      -  * Error have the same space as desc
-      -->
-    <string name="item_desc_click">Click somewhere on the screen</string>
-    <string name="item_desc_click_details">During %1$s at [%2$d, %3$d]</string>
-    <string name="item_desc_click_position_on_condition">On condition</string>
-    <string name="item_desc_click_on_position">Click on %1$d, %2$d</string>
-    <string name="item_desc_intent">Interact with another application</string>
-    <string name="item_desc_intent_action">Send %1$s</string>
-    <string name="item_desc_intent_action_component">Send %1$s to %2$s</string>
-    <string name="item_desc_pause">Pause the detection execution</string>
-    <string name="item_desc_pause_details">During %1$s</string>
-    <string name="item_desc_swipe">Swipe from a position on the screen to another</string>
-    <string name="item_desc_swipe_details">During %1$s from [%2$d, %3$d] to [%4$d, %5$d]</string>
-    <string name="item_desc_swipe_positions">Swipe from %1$d, %2$d to %3$d, %4$d</string>
-    <string name="item_desc_toggle_event">Change the enabled state of an event</string>
-    <string name="item_desc_toggle_event_details">Change event state with type %1$s</string>
-    <string name="item_error_action_invalid_generic">This action is invalid</string>
-    <string name="item_error_action_invalid_toggle_event_target">Target event not found</string>
-    <string name="item_title_click">Click</string>
-    <string name="item_title_debug_generate_report">Generate a report</string>
-    <string name="item_title_debug_show_view">Show debug view</string>
+    <string name="item_desc_click">Ekranın herhangi bir yerine tıklayın</string>
+    <string name="item_desc_click_details">%1$s süresince [%2$d, %3$d] konumunda</string>
+    <string name="item_desc_click_position_on_condition">Alan üzerinde</string>
+    <string name="item_desc_click_on_position">%1$d, %2$d konumuna tıklayın</string>
+    <string name="item_desc_intent">Başka bir uygulamayla etkileşimde bulunun</string>
+    <string name="item_desc_intent_action">%1$s gönderin</string>
+    <string name="item_desc_intent_action_component">%1$s yi %2$s yi açın</string>
+    <string name="item_desc_pause">Algılama yürütmesini duraklatın</string>
+    <string name="item_desc_pause_details">%1$s süresince</string>
+    <string name="item_desc_swipe">Ekran üzerinde bir konumdan diğerine kaydırın</string>
+    <string name="item_desc_swipe_details">%1$s süresince [%2$d, %3$d] konumundan [%4$d, %5$d] konumuna kaydırın</string>
+    <string name="item_desc_swipe_positions">%1$d, %2$d konumundan %3$d, %4$d konumuna kaydırın</string>
+    <string name="item_desc_toggle_event">Bir olayın etkin durumunu değiştirin</string>
+    <string name="item_desc_toggle_event_details">%1$s türüyle olay durumunu değiştirin</string>
+    <string name="item_error_action_invalid_generic">Bu eylem geçersiz</string>
+    <string name="item_error_action_invalid_toggle_event_target">Hedef etkinlik bulunamadı</string>
+    <string name="item_title_click">Tıkla</string>
+    <string name="item_title_debug_generate_report">Rapor oluştur</string>
+    <string name="item_title_debug_show_view">Hata ayıklama görünümünü göster</string>
     <string name="item_title_intent">Intent</string>
-    <string name="item_title_pause">Wait</string>
-    <string name="item_title_swipe">Swipe</string>
-    <string name="item_title_toggle_event">Change event state</string>
+    <string name="item_title_pause">Bekle</string>
+    <string name="item_title_swipe">Kaydır</string>
+    <string name="item_title_toggle_event">Olay durumunu değiştir</string>
 
-    <!--
-      - Empty list messages.
-      - Views handles any length here, but try to be concise.
-      -->
-    <string name="message_empty_actions">No actions !</string>
-    <string name="message_empty_conditions">No conditions !</string>
-    <string name="message_empty_copy">Nothing to copy</string>
-    <string name="message_empty_end_condition_config_event_none_in_scenario">No Event created in the scenario</string>
-    <string name="message_empty_end_condition_config_event_no_selection">No Event selected</string>
-    <string name="message_empty_event_list">No events !</string>
+    <string name="message_empty_actions">Eylem bulunmuyor!</string>
+    <string name="message_empty_conditions">Alan bulunmuyor!</string>
+    <string name="message_empty_copy">Kopyalanacak bir şey yok</string>
+    <string name="message_empty_end_condition_config_event_none_in_scenario">Otomasyonda oluşturulan etkinlik bulunmuyor</string>
+    <string name="message_empty_end_condition_config_event_no_selection">Seçilen bir Olay yok</string>
+    <string name="message_empty_event_list">Olay bulunmuyor!</string>
 
-    <!--
-      - Secondary empty list messages.
-      - Views handles any length here, you can use more verbosity than the regular empty text.
-      -->
-    <string name="message_empty_secondary_end_condition_no_events">You need at least one event to create an end condition for your scenario</string>
-    <string name="message_empty_secondary_event_list">An event contains a set of actions executed when a specific condition is detected on the screen.\nYou need at least one event in your scenario to execute it.</string>
-    <string name="message_empty_secondary_condition_list">A condition is a part of a screenshot that will be searched on each frames displayed by your phone screen.\nYou need at least one condition in your event.</string>
-    <string name="message_empty_secondary_action_list">An action is an interaction (click, swipe…) with your phone triggered when the created conditions are fulfilled.\nYou need at least one action in your event.</string>
+    <string name="message_empty_secondary_end_condition_no_events">Otomasyonunuz için bir bitiş koşulu oluşturmak için en az bir olaya ihtiyacınız var</string>
+    <string name="message_empty_secondary_event_list">Bir olay, ekranda belirli bir koşul algılandığında çalıştırılan bir dizi eylemi içerir.</string>
+    <string name="message_empty_secondary_condition_list">Otomasyon için ekranın tıklama yapılacak kısmı seçilmelidir.</string>
+    <string name="message_empty_secondary_action_list">Bir eylem, oluşturulan koşulların karşılandığında tetiklenen telefonunuzla etkileşim (tıklama, sürükleme...) içerir.</string>
 
-    <!--
-      - Messages.
-      - Views handles any length here, so no limitations.
-      -->
     <string name="message_condition_threshold">%1$d%%</string>
-    <string name="message_event_copy_with_toggle_action_from_another_scenario">This event have one or more toggle event actions referencing an event from another scenario.\nYou will have to update their target events before saving your scenario.</string>
-    <string name="message_event_delete_associated_end_condition">This event have one or more end conditions referencing it. Deleting this event will delete the associated end conditions as well.\nAre you sure ?</string>
-    <string name="message_event_delete_associated_action">This event have one or more actions referencing it. Deleting this event will delete the associated actions as well.\nAre you sure ?</string>
+    <string name="message_event_copy_with_toggle_action_from_another_scenario">Bu etkinliğin başka bir otomasyonundan bir veya daha fazla geçiş etkinliği eylemi referansı vardır.</string>
+    <string name="message_event_delete_associated_end_condition">Bu etkinliğin ona başvuran bir veya daha fazla bitiş koşulu vardır. Bu etkinliği silmek aynı zamanda ilişkili bitiş koşullarını da silecektir.\nEmin misiniz?</string>
+    <string name="message_event_delete_associated_action">Bu etkinliğin ona başvuran bir veya daha fazla eylem vardır. Bu etkinliği silmek aynı zamanda ilişkili eylemleri de silecektir.\nEmin misiniz?</string>
 
-    <!--
-      - Toast messages.
-      - Can be pretty long (2 lines).
-      -->
-    <string name="toast_configure_single_click">Touch the position to click on.</string>
-    <string name="toast_configure_swipe_from">Touch the position to start the swipe from.</string>
-    <string name="toast_configure_swipe_to">Touch the position to end the swipe to.</string>
+    <string name="toast_configure_single_click">Tıklanacak konumu dokunun.</string>
+    <string name="toast_configure_swipe_from">Sürükleme işlemine başlamak için konumu dokunun.</string>
+    <string name="toast_configure_swipe_to">Sürükleme işlemini bitirmek için konumu dokunun.</string>
 
-    <!--
-      - Section titles.
-      - Should be short and concise.
-      -->
-    <string name="section_title_condition_detection_details">Detection details</string>
-    <string name="section_title_condition_threshold">Tolerated difference</string>
-    <string name="section_title_detection_quality_title">Detection quality</string>
-    <string name="section_title_end_condition">End conditions</string>
-    <string name="section_title_intent_extras_value">Value</string>
-    <string name="section_title_start_application">Start application</string>
+    <string name="section_title_condition_detection_details">Algılama Detayları</string>
+    <string name="section_title_condition_threshold">Toleranslı Fark</string>
+    <string name="section_title_detection_quality_title">Algılama Kalitesi</string>
+    <string name="section_title_end_condition">Son Koşullar</string>
+    <string name="section_title_intent_extras_value">Değer</string>
+    <string name="section_title_start_application">Uygulamayı Başlat</string>
 
-    <!--
-      - List header.
-      - Displayed on one line.
-      -->
-    <string name="list_header_copy_event_this">Events from this scenario</string>
-    <string name="list_header_copy_event_all">Events from all scenarios</string>
-    <string name="list_header_copy_conditions_this">Conditions from this event</string>
-    <string name="list_header_copy_conditions_all">Conditions from all events</string>
-    <string name="list_header_copy_action_this">Actions from this event</string>
-    <string name="list_header_copy_action_all">Actions from all events</string>
+    <string name="list_header_copy_event_this">Otomasyon Etkinlikleri</string>
+    <string name="list_header_copy_event_all">Otomasyon Etkinlikleri</string>
+    <string name="list_header_copy_conditions_this">Bu Alandaki Koşullar</string>
+    <string name="list_header_copy_conditions_all">Tüm Otomasyondaki Koşullar</string>
+    <string name="list_header_copy_action_this">Bu Alandaki Eylemler</string>
+    <string name="list_header_copy_action_all">Tüm Otomasyondaki Eylemler</string>
 
-    <!--
-      - SearchView hint
-      - Displayed on one line.
-      -->
-    <string name="search_view_hint_event_copy">Search by event name</string>
-    <string name="search_view_hint_action_copy">Search by action name</string>
-    <string name="search_view_hint_condition_copy">Search by condition name</string>
+    <string name="search_view_hint_event_copy">Olay adına göre ara</string>
+    <string name="search_view_hint_action_copy">Eylem adına göre ara</string>
+    <string name="search_view_hint_condition_copy">Koşul adına göre ara</string>
 
-    <!--
-      - TextButton content.
-      - Should be short and concise.
-      -->
-    <string name="button_text_click_position_select">Select the position</string>
-    <string name="button_text_create_scenario">Create a scenario</string>
-    <string name="button_text_intent_extra_type_select">Select a type</string>
-    <string name="button_text_quality_speed">Speed</string>
-    <string name="button_text_quality_precision">Precision</string>
-    <string name="button_text_swipe_positions_select">Select the positions</string>
+    <string name="button_text_click_position_select">Konumu seç</string>
+    <string name="button_text_create_scenario">Otomasyon Oluştur</string>
+    <string name="button_text_intent_extra_type_select">Bir tür seçin</string>
+    <string name="button_text_quality_speed">Hız</string>
+    <string name="button_text_quality_precision">Hassasiyet</string>
+    <string name="button_text_swipe_positions_select">Alanları seç</string>
 
-    <!--
-      - Text input fields labels and error messages.
-      - Should be short and concise.
-      -->
-    <string name="input_field_label_name">Name</string>
-    <string name="input_field_label_click_press_duration">Press duration (ms)</string>
-    <string name="input_field_label_execution_count">Executions</string>
-    <string name="input_field_label_intent_extra_key">Key</string>
-    <string name="input_field_label_pause_duration">Pause duration (ms)</string>
-    <string name="input_field_label_scenario_name">Scenario name</string>
-    <string name="input_field_label_swipe_duration">Swipe duration (ms)</string>
-    <string name="input_field_label_anti_detection">Anti-detection</string>
-    <string name="input_field_label_event_state">State</string>
-    <string name="input_field_error_required">Required</string>
-    <string name="input_field_toggle_event_type">New event state</string>
+    <string name="input_field_label_name">Ad</string>
+    <string name="input_field_label_click_press_duration">Basma süresi (ms)</string>
+    <string name="input_field_label_execution_count">Çalıştırmalar</string>
+    <string name="input_field_label_intent_extra_key">Anahtar</string>
+    <string name="input_field_label_pause_duration">Duraklama süresi (ms)</string>
+    <string name="input_field_label_scenario_name">Otomasyon Adı</string>
+    <string name="input_field_label_swipe_duration">Kaydırma süresi (ms)</string>
+    <string name="input_field_label_anti_detection">Algılama önlemleri</string>
+    <string name="input_field_label_event_state">Durum</string>
+    <string name="input_field_error_required">Zorunlu</string>
+    <string name="input_field_toggle_event_type">Yeni otomasyon durumu</string>
 
-    <!--
-      - Dropdown input fields texts.
-      - Those fields are made of:
-      - * a label, describing the meaning of the field. Should be short and concise.
-      - * a set of items, made of:
-      -     * a title, displayed in the dropdown list and in the field if selected. Should be short and concise.
-      -     * a helper text (if needed), displayed bellow the field and changed with the selected item. Max 2 lines.
-      -->
+    <string name="dropdown_item_title_anti_detection_enabled">Etkin</string>
+    <string name="dropdown_item_title_anti_detection_disabled">Devre Dışı</string>
+    <string name="dropdown_helper_text_anti_detection_enabled">Tıkla, kaydırma ve duraklatma pozisyonlarını ve sürelerini küçük bir rastgele ofset ile değiştirin</string>
+    <string name="dropdown_helper_text_anti_detection_disabled">Tüm eylemleri belirtilen şekilde gerçekleştirin</string>
 
-    <!-- Dropdown field for selecting anti bot state -->
-    <string name="dropdown_item_title_anti_detection_enabled">Enabled</string>
-    <string name="dropdown_item_title_anti_detection_disabled">Disabled</string>
-    <string name="dropdown_helper_text_anti_detection_enabled">Randomize the click swipe and pause positions and durations by a small random offset</string>
-    <string name="dropdown_helper_text_anti_detection_disabled">Execute all actions as declared</string>
+    <string name="dropdown_item_title_event_state_enabled">Etkin</string>
+    <string name="dropdown_item_title_event_state_disabled">Devre Dışı</string>
+    <string name="dropdown_helper_text_event_state_enabled">Bu olay senaryoyu oynatırken normal olarak yorumlanacak</string>
+    <string name="dropdown_helper_text_event_state_disabled">Bu olayın senaryoyu oynatırken yorumlanabilmesi için bir eylem tarafından etkinleştirilmesi gerekmektedir</string>
 
-    <!-- Dropdown field for selecting the event state -->
-    <string name="dropdown_item_title_event_state_enabled">Enabled</string>
-    <string name="dropdown_item_title_event_state_disabled">Disabled</string>
-    <string name="dropdown_helper_text_event_state_enabled">This event will be interpreted normally when playing the scenario</string>
-    <string name="dropdown_helper_text_event_state_disabled">This event needs to be enabled by an action to be interpreted when playing the scenario</string>
+    <string name="dropdown_item_title_toggle_event_state_enable">Etkinleştir</string>
+    <string name="dropdown_item_title_toggle_event_state_disable">Devre Dışı Bırak</string>
+    <string name="dropdown_item_title_toggle_event_state_toggle">Değiştir</string>
+    <string name="dropdown_helper_text_toggle_event_state_enable">Otomasyon etkinleştirilmiş olarak yorumlanacak</string>
+    <string name="dropdown_helper_text_toggle_event_state_disable">Otomasyon  devre dışı bırakılacak</string>
+    <string name="dropdown_helper_text_toggle_event_state_toggle">Otomasyon, etkinleştirilmişse olayı yorumlamaya başlayın, devre dışı bırakılmışsa durdurun</string>
 
-    <!-- Dropdown field for selecting the toggle event type -->
-    <string name="dropdown_item_title_toggle_event_state_enable">Enable</string>
-    <string name="dropdown_item_title_toggle_event_state_disable">Disable</string>
-    <string name="dropdown_item_title_toggle_event_state_toggle">Toggle</string>
-    <string name="dropdown_helper_text_toggle_event_state_enable">The event will start being interpreted when playing the scenario</string>
-    <string name="dropdown_helper_text_toggle_event_state_disable">The event will stop being interpreted when playing the scenario</string>
-    <string name="dropdown_helper_text_toggle_event_state_toggle">When playing the scenario, start interpreting the event if it is disabled, stop if it is enabled</string>
+    <string name="dropdown_label_condition_operator">Koşullar</string>
+    <string name="dropdown_item_title_condition_or">Bir</string>
+    <string name="dropdown_item_title_condition_and">Tümü</string>
+    <string name="dropdown_helper_text_condition_or">Eylemleri tetiklemek için yalnızca bir koşulun yerine getirilmesi gerekmektedir</string>
+    <string name="dropdown_helper_text_condition_and">Eylemleri tetiklemek için tüm koşulların yerine getirilmesi gerekmektedir</string>
 
-    <!-- Dropdown field for selecting the conditions operator -->
-    <string name="dropdown_label_condition_operator">Conditions</string>
-    <string name="dropdown_item_title_condition_or">One</string>
-    <string name="dropdown_item_title_condition_and">All</string>
-    <string name="dropdown_helper_text_condition_or">Only one condition must be fulfilled to trigger the actions</string>
-    <string name="dropdown_helper_text_condition_and">All conditions must be fulfilled to trigger the actions</string>
+    <string name="dropdown_helper_text_end_condition_or">Otomasyonu durdurmak için yalnızca bir koşulun yerine getirilmesi gerekmektedir</string>
+    <string name="dropdown_helper_text_end_condition_and">Otomasyonu durdurmak için tüm koşulların yerine getirilmesi gerekmektedir</string>
 
-    <!-- Dropdown field for selecting the end conditions operator. Item titles are the same as conditions operator. -->
-    <string name="dropdown_helper_text_end_condition_or">Only one condition must be fulfilled to stop the scenario</string>
-    <string name="dropdown_helper_text_end_condition_and">All conditions must be fulfilled to stop the scenario</string>
+    <string name="dropdown_label_condition_detection_type">Algılama türü</string>
+    <string name="dropdown_item_title_detection_type_exact">Tam</string>
+    <string name="dropdown_item_title_detection_type_screen">Ekran</string>
+    <string name="dropdown_helper_text_detection_type_exact">Koşul algılaması yakalanan konumda yapılır</string>
+    <string name="dropdown_helper_text_detection_type_screen">Koşul algılaması tüm ekran üzerinde yapılır</string>
 
-    <!-- Dropdown field for selecting the condition detection type. -->
-    <string name="dropdown_label_condition_detection_type">Detection type</string>
-    <string name="dropdown_item_title_detection_type_exact">Exact</string>
-    <string name="dropdown_item_title_detection_type_screen">Screen</string>
-    <string name="dropdown_helper_text_detection_type_exact">The condition detection is made at the captured position</string>
-    <string name="dropdown_helper_text_detection_type_screen">The condition detection is made on the whole screen</string>
+    <string name="dropdown_label_condition_visibility">Görünürlük</string>
+    <string name="dropdown_item_title_condition_visibility_present">Mevcut</string>
+    <string name="dropdown_item_title_condition_visibility_absent">Bulunmuyor</string>
+    <string name="dropdown_helper_text_condition_visibility_present">Koşulun algılanması gerekmektedir</string>
+    <string name="dropdown_helper_text_condition_visibility_absent">Koşulun algılanmaması gerekmektedir</string>
 
-    <!-- Dropdown field for selecting the condition visibility. -->
-    <string name="dropdown_label_condition_visibility">Visibility</string>
-    <string name="dropdown_item_title_condition_visibility_present">Present</string>
-    <string name="dropdown_item_title_condition_visibility_absent">Absent</string>
-    <string name="dropdown_helper_text_condition_visibility_present">The condition must be detected</string>
-    <string name="dropdown_helper_text_condition_visibility_absent">The condition must not be detected</string>
+    <string name="dropdown_label_click_position_type">Tıklama konumu</string>
+    <string name="dropdown_item_title_click_position_type_on_condition">Koşul üzerinde</string>
+    <string name="dropdown_item_title_click_position_type_on_position">Seçili konumda</string>
+    <string name="dropdown_helper_text_click_position_type_on_condition">Algılanan koşula tıklayın</string>
+    <string name="dropdown_helper_text_click_position_type_on_position">Seçili konuma tıklayın</string>
 
-    <!-- Dropdown field for selecting the click position type -->
-    <string name="dropdown_label_click_position_type">Click on</string>
-    <string name="dropdown_item_title_click_position_type_on_condition">Condition</string>
-    <string name="dropdown_item_title_click_position_type_on_position">Selected position</string>
-    <string name="dropdown_helper_text_click_position_type_on_condition">Click on the detected condition</string>
-    <string name="dropdown_helper_text_click_position_type_on_position">Click on the selected position</string>
+    <string name="dropdown_label_intent_sending_type">Tür</string>
 
-    <!-- Dropdown field for selecting the intent sending type. -->
-    <string name="dropdown_label_intent_sending_type">Type</string>
+    <string name="dropdown_label_intent_extra_value_type">Değer türü</string>
 
-    <!--
-      - Dropdown field for selecting the intent extra type.
-      - All items for this field are not translatable.
-      -->
-    <string name="dropdown_label_intent_extra_value_type">Value type</string>
+    <string name="content_desc_drag_and_drop">Öğeleri yeniden düzenlemek için sürükle ve bırak</string>
+    <string name="content_desc_event_state">Etkinliğin durumu</string>
+    <string name="content_desc_conditions_count">Bu etkinlikteki koşulların sayısı</string>
+    <string name="content_desc_actions_count">Bu etkinlikteki eylemlerin sayısı</string>
+    <string name="content_desc_image_condition">Algılanacak görüntü</string>
+    <string name="content_desc_play_pause_scenario">Senaryoyu oynat veya duraklat</string>
+    <string name="content_desc_stop_clicker">Otomasyonu durdur</string>
+    <string name="content_desc_open_event_list">Etkinlik listesini aç</string>
+    <string name="content_desc_move_menu">Sabit menüyü taşı</string>
+    <string name="content_desc_confirm">Onayla</string>
+    <string name="content_desc_go_back">Diyaloga geri dön</string>
+    <string name="content_desc_action_icon">Eylemin türünü gösteren simge</string>
+    <string name="content_desc_application_icon">Başlatılacak uygulamanın simgesi.</string>
 
-
-    <!--
-      - Content description texts.
-      - They are use as accessibility texts for visually impaired people. They will not be displayed but spoken.
-      -->
-    <string name="content_desc_drag_and_drop">Drag and drop to reorder the elements</string>
-    <string name="content_desc_event_state">The state of the event</string>
-    <string name="content_desc_conditions_count">The number of conditions in this event</string>
-    <string name="content_desc_actions_count">The number of actions in this event</string>
-    <string name="content_desc_image_condition">The image to be detected</string>
-    <string name="content_desc_play_pause_scenario">Play or pause the scenario</string>
-    <string name="content_desc_stop_clicker">Stop Smart AutoClicker</string>
-    <string name="content_desc_open_event_list">Open the event list</string>
-    <string name="content_desc_move_menu">Move the floating menu</string>
-    <string name="content_desc_confirm">Confirm</string>
-    <string name="content_desc_go_back">Back to dialog</string>
-    <string name="content_desc_action_icon">The icon showing the type of action</string>
-    <string name="content_desc_application_icon">The icon of the application to start.</string>
-
-    <!--
-      - The following strings should be kept the same in all languages.
-      - DO NOT TRANSLATE.
-      -->
     <string name="dialog_overlay_title_extra_config" translatable="false">Extra</string>
     <string name="dialog_scenario_settings_end_condition_card_executions" translatable="false">x%1$d</string>
 

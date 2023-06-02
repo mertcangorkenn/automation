@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2023 Kevin Buzeau
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.buzbuz.smartautoclicker.feature.scenario.config.ui.condition
 
 import android.content.Context
@@ -102,19 +86,6 @@ class ConditionDialog(
                 items = viewModel.detectionTypeItems,
                 onItemSelected = viewModel::setDetectionType,
             )
-
-            conditionShouldAppear.setItems(
-                label = context.getString(R.string.dropdown_label_condition_visibility),
-                items = viewModel.shouldBeDetectedItems,
-                onItemSelected = viewModel::setShouldBeDetected,
-            )
-
-            seekbarDiffThreshold.apply {
-                setLabelFormatter { "$it %" }
-                addOnChangeListener {  _, value, fromUser ->
-                    if (fromUser) viewModel.setThreshold(value.roundToInt())
-                }
-            }
         }
 
         return viewBinding.root
@@ -126,7 +97,6 @@ class ConditionDialog(
                 launch { viewModel.name.collect(::updateConditionName) }
                 launch { viewModel.nameError.collect(viewBinding.editNameLayout::setError) }
                 launch { viewModel.conditionBitmap.collect(::updateConditionBitmap) }
-                launch { viewModel.shouldBeDetected.collect(::updateShouldBeDetected) }
                 launch { viewModel.detectionType.collect(::updateConditionType) }
                 launch { viewModel.threshold.collect(::updateThreshold) }
                 launch { viewModel.conditionCanBeSaved.collect(::updateSaveButton) }
@@ -150,23 +120,12 @@ class ConditionDialog(
         }
     }
 
-    private fun updateShouldBeDetected(newValue: DropdownItem) {
-        viewBinding.conditionShouldAppear.setSelectedItem(newValue)
-    }
-
     private fun updateConditionType(newValue: DropdownItem) {
         viewBinding.conditionDetectionType.setSelectedItem(newValue)
     }
 
     private fun updateThreshold(newThreshold: Int) {
         viewBinding.apply {
-            val isNotInitialized = seekbarDiffThreshold.value == 0f
-            seekbarDiffThreshold.value = newThreshold.toFloat()
-
-            if (isNotInitialized) {
-                seekbarDiffThreshold.valueFrom = 0f
-                seekbarDiffThreshold.valueTo = MAX_THRESHOLD
-            }
         }
     }
 

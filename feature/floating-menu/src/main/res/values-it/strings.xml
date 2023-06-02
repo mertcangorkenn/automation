@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
- 
-<resources>
-    <string name="message_scenario_saving_error">Il tuo scenario non può essere salvato a causa di un errore interno. \nVuoi modificarlo o annullare tutte le tue modifiche?</string>
-    <string name="button_dialog_modify">Modificare</string>
-</resources>

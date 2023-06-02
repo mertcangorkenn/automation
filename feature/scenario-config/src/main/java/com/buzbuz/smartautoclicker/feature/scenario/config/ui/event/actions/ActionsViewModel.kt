@@ -1,19 +1,4 @@
-/*
- * Copyright (C) 2023 Kevin Buzeau
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+ 
 package com.buzbuz.smartautoclicker.feature.scenario.config.ui.event.actions
 
 import android.app.Application
@@ -87,7 +72,6 @@ class ActionsViewModel(application: Application) : AndroidViewModel(application)
                 add(ActionTypeChoice.Swipe)
                 add(ActionTypeChoice.Pause)
                 add(ActionTypeChoice.Intent(isProModePurchased))
-                add(ActionTypeChoice.ToggleEvent(isProModePurchased))
             }
         }.stateIn(
             viewModelScope,
@@ -109,7 +93,6 @@ class ActionsViewModel(application: Application) : AndroidViewModel(application)
         is ActionTypeChoice.Swipe -> editionRepository.editedItemsBuilder.createNewSwipe(context)
         is ActionTypeChoice.Pause -> editionRepository.editedItemsBuilder.createNewPause(context)
         is ActionTypeChoice.Intent -> editionRepository.editedItemsBuilder.createNewIntent(context)
-        is ActionTypeChoice.ToggleEvent -> editionRepository.editedItemsBuilder.createNewToggleEvent(context)
     }
 
     /**
@@ -141,7 +124,6 @@ class ActionsViewModel(application: Application) : AndroidViewModel(application)
     fun onProModeUnsubscribedActionClicked(context: Context, choice: ActionTypeChoice) {
         val feature = when (choice) {
             is ActionTypeChoice.Intent -> ProModeAdvantage.Feature.ACTION_TYPE_INTENT
-            is ActionTypeChoice.ToggleEvent -> ProModeAdvantage.Feature.ACTION_TYPE_TOGGLE_EVENT
             else -> return
         }
 
@@ -188,13 +170,6 @@ sealed class ActionTypeChoice(
         R.string.item_title_intent,
         R.string.item_desc_intent,
         R.drawable.ic_intent,
-        enabled = enabled,
-    )
-    /** Toggle Event Action choice. */
-    class ToggleEvent(enabled: Boolean) : ActionTypeChoice(
-        R.string.item_title_toggle_event,
-        R.string.item_desc_toggle_event,
-        R.drawable.ic_toggle_event,
         enabled = enabled,
     )
 }

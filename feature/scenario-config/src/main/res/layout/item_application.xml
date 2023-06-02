@@ -31,6 +31,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:drawableEndCompat="@drawable/ic_chevron"
-        tools:text="Smart AutoClicker"/>
+        tools:text="Otomasyon"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
